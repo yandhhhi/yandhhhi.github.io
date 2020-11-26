@@ -1,0 +1,32 @@
+{
+    "name": "Football APPS",
+    "short_name": "FootballAPPS",
+    "gcm_sender_id": "384625262244",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#FFE9D2",
+    "theme_color": "#FFE1C4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/src/img/logo/logo.png",
+            "type": "image/png",
+            "sizes": "492x464"
+        },
+        {
+            "src": "/src/img/logo/logo144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/src/img/logo/logo192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/src/img/logo/logo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

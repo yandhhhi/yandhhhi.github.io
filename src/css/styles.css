@@ -1,0 +1,33 @@
+:root {
+  --primary: #FFE9D2;
+  --secondary: #FFE1C4;
+  --title: #FF8816;
+}
+nav {
+  background: var(--primary);
+  border-bottom: 10px solid var(--secondary);
+  margin-bottom: 50px;
+}
+nav a {
+  text-transform: uppercase;
+  color: var(--title);
+}
+nav a span {
+  font-weight: bold;
+}
+nav .sidenav-trigger {
+  margin: 0;
+}
+table.highlight td img {
+  width: 50px;
+}
+section.home-1 .container h3 {
+  margin-top: 25px;
+}
+section.detail-1 .container img.responsive-img,
+section.detail-1 .container video.responsive-video {
+  width: 50%;
+}
+section.favorit-1 .container img.responsive-img {
+  max-width: 275px;
+}
