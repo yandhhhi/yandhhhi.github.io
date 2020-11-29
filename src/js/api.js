@@ -1,4 +1,4 @@
-const key = "16d85bf702974259b17e4dff4faeade4";
+const key = "2a73df949da1444a96e424823b11f5f2";
 const url = "https://api.football-data.org/v2/";
 const inggris = 2021;
 const spanyol = 2014;
