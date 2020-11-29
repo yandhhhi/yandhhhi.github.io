@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
   getKlasemen_spanyol();
   getKlasemen_prancis();
   getKlasemen_jerman();
-  getFavoriteTeam();
-  getClubById();
   getAllStandings_inggris();
   getAllStandings_spanyol();
   getAllStandings_prancis();
