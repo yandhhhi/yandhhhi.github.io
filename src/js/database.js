@@ -91,8 +91,8 @@ function showNotification(body) {
     const title = 'Favorit Team';
     const options = {
         'body': `${body}`,
-        'icon': '../icon.png',
-        'badge': '../icon.png'
+        'icon': '/src/img/logo/logo.png',
+        'badge': '/src/img/logo/logo.png'
     }
     if (Notification.permission === 'granted') {
         navigator.serviceWorker.ready.then(registration => {
