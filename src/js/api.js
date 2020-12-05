@@ -48,12 +48,11 @@ function getAllStandings_inggris() {
   }
 
   fetchApi(klasemen_inggris)
-    .then(data => {
-      getKlasemen_inggris(data);
+  .then(data => {
+    data.json().then(res => {
+      getKlasemen_inggris(res);
     })
-    .catch(error => {
-      console.log(error)
-    })
+  })
 }
 
 function getAllStandings_spanyol() {
@@ -67,13 +66,13 @@ function getAllStandings_spanyol() {
     })
   }
 
-  fetchApi(klasemen_spanyol)
+    fetchApi(klasemen_spanyol)
     .then(data => {
-      getKlasemen_spanyol(data);
+      data.json().then(res => {
+        getKlasemen_spanyol(res);
+      })
     })
-    .catch(error => {
-      console.log(error)
-    })
+    
 }
 
 function getAllStandings_prancis() {
@@ -87,12 +86,11 @@ function getAllStandings_prancis() {
     })
   }
 
-  fetchApi(klasemen_prancis)
+    fetchApi(klasemen_prancis)
     .then(data => {
-      getKlasemen_prancis(data);
-    })
-    .catch(error => {
-      console.log(error)
+      data.json().then(res => {
+        getKlasemen_prancis(res);
+      })
     })
 }
 
@@ -107,12 +105,11 @@ function getAllStandings_jerman() {
     })
   }
 
-  fetchApi(klasemen_jerman)
+    fetchApi(klasemen_jerman)
     .then(data => {
-      getKlasemen_jerman(data);
-    })
-    .catch(error => {
-      console.log(error)
+      data.json().then(res => {
+        getKlasemen_jerman(res);
+      })
     })
 }
 
