@@ -103,6 +103,13 @@ if (workbox) {
         workbox.strategies.staleWhileRevalidate()
     );
 
+    workbox.routing.registerRoute(
+        /.*(?:googleapis|gstatic)\.com/,
+        workbox.strategies.staleWhileRevalidate({
+          cacheName: 'google-fonts-stylesheets',
+        })
+      );
+
 } else {
     console.log(`Workbox gagal dimuat`);
 }

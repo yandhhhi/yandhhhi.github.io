@@ -117,10 +117,7 @@ function getAllStandings_jerman() {
 }
 
 function getKlasemen_inggris(data) {
-  fetchApi(klasemen_inggris)
-    .then(status)
-    .then(json)
-    .then(function (data) {
+
       data.standings.forEach(function (standing) {
         standing.table.forEach(function (placement) {
           let table = "";
@@ -152,16 +149,9 @@ function getKlasemen_inggris(data) {
       });
 
       document.getElementById("last-update-inggris").innerHTML = "Last Updated: " + data.competition.lastUpdated;
-    })
-    .catch(error);
-
 }
 
 function getKlasemen_spanyol(data) {
-  fetchApi(klasemen_spanyol)
-    .then(status)
-    .then(json)
-    .then(function (data) {
       data.standings.forEach(function (standing) {
         standing.table.forEach(function (placement) {
           let table = "";
@@ -193,16 +183,9 @@ function getKlasemen_spanyol(data) {
       });
 
       document.getElementById("last-update-spanyol").innerHTML = "Last Updated: " + data.competition.lastUpdated;
-    })
-    .catch(error);
-
 }
 
 function getKlasemen_prancis(data) {
-  fetchApi(klasemen_prancis)
-    .then(status)
-    .then(json)
-    .then(function (data) {
       data.standings.forEach(function (standing) {
         standing.table.forEach(function (placement) {
           let table = "";
@@ -232,18 +215,10 @@ function getKlasemen_prancis(data) {
           document.getElementById("klasemen-prancis").innerHTML = content;
         });
       });
-
       document.getElementById("last-update-prancis").innerHTML = "Last Updated: " + data.competition.lastUpdated;
-    })
-    .catch(error);
-
 }
 
 function getKlasemen_jerman(data) {
-  fetchApi(klasemen_jerman)
-    .then(status)
-    .then(json)
-    .then(function (data) {
       data.standings.forEach(function (standing) {
         standing.table.forEach(function (placement) {
           let table = "";
@@ -275,9 +250,6 @@ function getKlasemen_jerman(data) {
       });
 
       document.getElementById("last-update-jerman").innerHTML = "Last Updated: " + data.competition.lastUpdated;
-    })
-    .catch(error);
-
 }
 
 function getClubById() {
